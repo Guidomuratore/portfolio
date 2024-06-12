@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.cohete img{
+    image-resolution: 40px;
+}
+.nav-item a{
+    color: rgb(122, 144, 185);
+    
+}
+.nav-item .active {
+    border-radius: 40px;
+    border: 1px solid rgb(122, 144, 185);
+}
+#inicio, #contacto {
+    background-image: url('../images/fondo-contacto-guido.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+#proyectos{
+    background-image: url('../images/fondo-proyectos-guido.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.proyecto {
+    border-color: black;
+    ;
+}
+.proyecto p{
+    font-size: 15px;
+    height: 100px;
+}
+.proyecto img{
+    height: 210px;
+}
+.proyecto h2{
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+h1{
+    color: rgb(122, 144, 185);
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+footer a{
+    color: black;
+}
+.btn-info{
+    --bs-btn-background-color: #370a6d;
+    --bs-btn-color: white;
+    --bs-btn-border-radius: 20px;
+    --bs-btn-border-color: black;
+    --bs-btn-disabled-border-color: black;
+    --btn-hover-border-color: black;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-hover-color: #370a6d;
+    --bs-btn-hover-background-color: white;
+}
+footer .fa-github{
+    font-size: 38px;
+    height: 40px;
+}
+footer .fa-linkedin-in{
+    font-size: 28px;
+    background-color: white;
+    border-radius: 22px;
+    padding: 8px 8px 4px 8px;
+    margin-left: 10px;
+}
+footer .fa-whatsapp {
+    color: white;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    font-size: 31px;
+    background-color: green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+@media (max-width: 750px) {
+
+    /* Para mobile */
+    #inicio, #contacto {
+        background-size: cover;
+    }
+    #proyectos {
+        background-size: contain;
+    }
+}
