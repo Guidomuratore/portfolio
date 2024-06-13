@@ -2,8 +2,17 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
-.cohete img{
-    image-resolution: 40px;
+#index img{
+    height: 400px;
+}
+#index img:hover{
+    height: 410px;
+}
+.index-1 p{
+    color: white;
+}
+.cohete{
+    height: 410px;
 }
 .nav-item a{
     color: rgb(122, 144, 185);
@@ -13,21 +22,22 @@ body {
     border-radius: 40px;
     border: 1px solid rgb(122, 144, 185);
 }
-#inicio, #contacto {
+#contacto {
     background-image: url('../images/fondo-contacto-guido.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
 }
-#proyectos{
+#proyectos, #index{
     background-image: url('../images/fondo-proyectos-guido.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .proyecto {
     border-color: black;
-    ;
+
 }
 .proyecto p{
     font-size: 15px;
@@ -44,31 +54,19 @@ body {
 h1{
     color: rgb(122, 144, 185);
 }
-
-.btn{
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-}
-.btn:hover{
-    color: black;
-    background-color: white;
-    border-color: black;
+.btn-enviar, .btn-info, .btn-index {
+    --bs-btn-color: white;
+    --bs-btn-border-radius: 20px;
+    --bs-btn-border-color: black;
+    --bs-btn-bg: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: white;
 }
 footer a{
     color: black;
 }
-.btn-info{
-    --bs-btn-background-color: #370a6d;
-    --bs-btn-color: white;
-    --bs-btn-border-radius: 20px;
-    --bs-btn-border-color: black;
-    --bs-btn-disabled-border-color: black;
-    --btn-hover-border-color: black;
-    --bs-btn-hover-border-color: black;
-    --bs-btn-hover-color: #370a6d;
-    --bs-btn-hover-background-color: white;
-}
+
 footer .fa-github{
     font-size: 38px;
     height: 40px;
@@ -93,10 +91,17 @@ footer .fa-whatsapp {
 @media (max-width: 750px) {
 
     /* Para mobile */
-    #inicio, #contacto {
+    #contacto {
         background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
     }
-    #proyectos {
-        background-size: contain;
+    #inicio,#proyectos {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
     }
 }
