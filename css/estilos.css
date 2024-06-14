@@ -93,13 +93,18 @@ footer .fa-whatsapp {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
+#stack-tecnologico {
+    background-color: aliceblue;
+}
 .foto-perfil-guido{
+    border-radius: 400px;
     height: 300px;
 }
-.sobremi {
-    height: 200px;
+.programas{
+    border: solid 2px black;
+    border-radius: 10px;
 }
+
 @media (max-width: 750px) {
 
     /* Para mobile */
