@@ -1,3 +1,8 @@
+<?php
+    $pg = "sobre-mi";
+
+?>
+
 <!DOCTYPE html>
 <html lang="es" class="h-100">
 
@@ -8,8 +13,7 @@
     <title>Sobre Mi</title>
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="css/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -18,36 +22,7 @@
 
 <body id="sobre-mi" class="d-flex flex-column h-100">
     <header class="container">
-        <nav class="navbar navbar-expand-md ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4 active" href="sobre-mi.html">Sobre mí</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="proyectos.html">Proyectos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-4" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <li class="float-sm-end">
-                            <a class="btn btn-cv" href="contacto.html">Descargar mi CV <i
-                                    class="fa-solid fa-download"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php include_once("menu.php"); ?>
     </header>
     <main>
         <section id="descripcion">
@@ -61,8 +36,7 @@
                         <a href="contacto.html" class="btn btn-info text-center">Enviar Mensaje</a>
                     </div>
                     <div class="col-sm-6 col-12 text-center">
-                        <img src="images/foto-perfil-guido.jpg" alt="Guido"
-                            class="foto-perfil-guido px-5 py-3 mx-3">
+                        <img src="images/foto-perfil-guido.jpg" alt="Guido" class="foto-perfil-guido px-5 py-3 mx-3">
                     </div>
                 </div>
         </section>
@@ -235,10 +209,8 @@
         <div class="row">
             <div class="col-12">
                 <a href="https://github.com/Guidomuratore" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/guido-ignacio-muratore-2b14991a2//" target="_blank"><i
-                        class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://api.whatsapp.com/send?phone=541122529232" target="_blank"><i
-                        class="fa-brands fa-whatsapp px-3 pt-3 pb-4"></i></a>
+                <a href="https://www.linkedin.com/in/guido-ignacio-muratore-2b14991a2//" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=541122529232" target="_blank"><i class="fa-brands fa-whatsapp px-3 pt-3 pb-4"></i></a>
             </div>
         </div>
     </footer>
